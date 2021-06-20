@@ -8,8 +8,10 @@ import { VentasModule } from './ventas/ventas.module';
 
 //cambiar local de app en las fechas
 import localeEs from '@angular/common/locales/es-CL';
+import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 registerLocaleData(localeEs);
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ registerLocaleData(localeEs);
     VentasModule
   ],
   providers: [
+    //uso de manera global
     { provide: LOCALE_ID, useValue: 'es-CL'}
   ],
   bootstrap: [AppComponent]
