@@ -26,7 +26,7 @@ registerLocaleData(localeFr);
     BrowserAnimationsModule
   ],
   providers: [
-    //*uso de manera global
+    //! uso de manera global
     { provide: LOCALE_ID, useValue: 'es-CL'}
   ],
   bootstrap: [AppComponent]
